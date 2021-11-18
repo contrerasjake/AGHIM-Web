@@ -1,21 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <form action="{{ route('register') }}" method="post">
+    <form action="{{ route('login') }}" method="post">
         @csrf
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your Name" value="{{ old('name') }}"
-                @error('name')
-                    style="border-color:red"        
-                @enderror 
-            >
-            @error('name')
-                <div>
-                    {{$message}}
-                </div>
-            @enderror
-        </div>
         <div>
             <label for="email">Email</label>
             <input type="text" name="email" id="email" placeholder="Your Email" value="{{ old('email') }}"
@@ -43,11 +30,7 @@
             @enderror
         </div>
         <div>
-            <label for="password_confirmation">Password again</label>
-            <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat your password" value="">
-        </div>
-        <div>
-            <button type="submit">Register</button>
+            <button type="submit">Login</button>
         </div>
     </form>
 @endsection
