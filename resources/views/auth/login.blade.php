@@ -35,16 +35,6 @@
                         </div>
                     @enderror
                 </div>
-                <script> //hide error messages when input is clicked or focused
-                    jQuery( document ).ready(function() {
-                        // event for click on input (also you can use click)
-                        //better to change form to .yourFormClass
-                        $('form input').focus(function(){
-                        // get selected input error container
-                        $(this).siblings(".error-message").hide();
-                        });
-                    });
-                </script>
                 <div>
                     <button class="main-button" type="submit">LOGIN</button>
                 </div>
