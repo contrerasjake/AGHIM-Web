@@ -1,5 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="<?php echo asset('css/home1.css')?>" type="text/css">
+<link rel="stylesheet" href="<?php echo asset('css/home.css')?>" type="text/css">
 
 @extends('layouts.app')
 
