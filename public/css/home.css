@@ -1,0 +1,465 @@
+.title {
+    float: right;
+    width: 35vw;
+    padding-right: 4vw;
+    padding-top: 4vw;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.titlePhoto {
+    position: relative;
+    top: 2vw;
+    left: 1vw;
+    width: 60vw;
+}
+
+.statement {
+    position: sticky;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.topline {
+    position: relative;
+    width: 90vw;
+    top: 15vw;
+    right: 60vw;
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    position: relative;
+    top: 10vw;
+    
+}
+
+.head {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 35%;
+    
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5vw;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+
+.foodDeliveries {
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10vw;
+    left: 5vw;
+}
+
+.foodPhoto {
+    position: absolute;
+    left: 50vw;
+    top: -2vw;
+    
+    width: 25vw;
+    height: 20vw;
+}
+
+h1 {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    line-height: 3vw;
+
+    color: #000000;
+}
+
+.food_details {
+    width: 35vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.packageDeliveries {
+    width: 40vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 32vw;
+    left: 54vw;
+}
+
+.packagePhoto {
+    position: absolute;
+    right: 55vw;
+    bottom: -10vw;
+
+    width: 20vw;
+    height: 25vw;
+
+}
+
+h2 {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    line-height: 3vw;
+    text-align: right;
+
+    color: #000000;
+}
+
+.package_details {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+    text-align: right;
+
+    color: #000000;
+}
+
+.carRental {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 54vw;
+    left: 5vw;
+}
+
+h3 {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    line-height: 3vw;
+
+    color: #000000;
+}
+
+.car_details {
+    width: 35vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.carPhoto {
+    position: absolute;
+    left: 48vw;
+    top: -4vw;
+
+    width: 33vw;
+    height: 18vw;;
+    transform: scaleX(-1);
+}
+
+.maintenance {
+    width: 40vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 72vw;
+    left: 54vw;
+}
+
+.maintenancePhoto {
+    position: absolute;
+    right: 60vw;
+    bottom: -3vw;
+
+    width: 15vw;
+    height: 15vw;;
+
+}
+
+h4 {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4vw;
+    line-height: 3vw;
+    text-align: right;
+
+    color: #000000;
+}
+
+.maintenance_details {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+    text-align: right;
+
+    color: #000000;
+}
+
+
+.testimonials {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 101vw;
+    left: 5vw;
+}
+
+h5 {
+    font-family: Montserrat;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    top: 93vw;
+    
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5vw;
+    line-height: 59px;
+
+    color: #000000;
+}
+
+.box1 {
+    width: 25vw;
+    height: 20vw;
+    position: absolute;
+    left: 3vw;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    
+}
+
+.testimonials1 {
+    width: 20vw;
+    position: inherit;
+    top: 1.5vw;
+    left: 1.5vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.name1 {
+    position:inherit;
+    top: 16vw;
+    left: 12vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.box2 {
+    width: 25vw;
+    height: 20vw;
+    position: absolute;
+    left: 32vw;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    
+}
+
+.testimonials2 {
+    width: 20vw;
+    position: inherit;
+    top: 1.5vw;
+    left: 1.5vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.name2 {
+    position:inherit;
+    top: 16vw;
+    left: 12vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.box3 {
+    width: 25vw;
+    height: 20vw;
+    position: absolute;
+    left: 61vw;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    
+}
+
+.testimonials3 {
+    width: 20vw;
+    position: inherit;
+    top: 1.5vw;
+    left: 1.5vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.name3 {
+    position:inherit;
+    top: 16vw;
+    left: 12vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3vw;
+    line-height: 1.2vw;
+    display: flex;
+
+    color: #000000;
+}
+
+.bottomline {
+    position: relative;
+    width: 90vw;
+    top: 90vw;
+    left: 5vw;
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.bottom {
+    position: relative;
+    top: 160vw;
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    height: 20vw;
+    width: 100%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    line-height: 15vw;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    background: #EAEFF2;
+}
+
+.mast {
+    position: absolute;
+    height: 5vw;
+    width: 100%;
+    top: 20vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+    background: #363A45;
+}
+
+.terms {
+    position: inherit;
+    left: 3vw;
+}
+
+.privacy {
+    position: inherit;
+    left: 15vw;
+}
+
+.logo {
+    position: inherit;
+    left: 80vw;
+}
+
+
+
+
