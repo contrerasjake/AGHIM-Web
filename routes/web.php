@@ -5,6 +5,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Profiles\ProfileController;
+use App\Http\Controllers\Profiles\ProfileAddressController;
 
 Route::get('/', function(){
     return view('home');
@@ -17,3 +19,7 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
+
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+Route::get('/profile/address', [ProfileAddressController::class, 'index'])->name('address');
