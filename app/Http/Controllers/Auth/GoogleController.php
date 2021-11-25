@@ -32,13 +32,13 @@ class GoogleController extends Controller
                     'email' => $user->getEmail(),
                     'password' => Hash::make($user->getName().'@'.$user->getId())
                 ]);
+                event(new Registered($user));
             }else{
                 $saveUser = User::where('email',  $user->getEmail())->update([
                     'google_id' => $user->getId(),
                 ]);
                 $saveUser = User::where('email', $user->getEmail())->first();
             }
-
 
             Auth::loginUsingId($saveUser->id);
 

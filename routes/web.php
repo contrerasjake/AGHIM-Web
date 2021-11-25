@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\FacebookSocialiteController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\VerificationController;
 
 Route::get('/', function(){
     return view('home');
@@ -29,3 +30,17 @@ Route::prefix('facebook')->name('facebook.')->group( function(){
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/email/verify', [VerificationController::class, 'show'])->name('verification.notice');
+    Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware(['signed']);
+    Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
+});
+
+//only authenticated can access this group
+Route::group(['middleware' => ['auth']], function() {
+    //only verified account can access with this group
+    Route::group(['middleware' => ['verified']], function() {
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+    });
+});

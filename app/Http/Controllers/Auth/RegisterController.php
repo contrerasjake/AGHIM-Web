@@ -28,6 +28,8 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+        event(new Registered($user));
+
         //sign in
         auth()->attempt($request->only('email', 'password'));
         

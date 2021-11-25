@@ -20,6 +20,11 @@
        <div class="menu">
          <li>
             <a href="{{ route('home') }}">Home</a>
+         </li> 
+         <li>
+            @auth
+            <a href="{{ route('dashboard.index') }}">Dashboard</a>
+            @endauth
          </li>
 
          <li>
