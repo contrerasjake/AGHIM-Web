@@ -21,12 +21,11 @@
          <li>
             <a href="{{ route('home') }}">Home</a>
          </li> 
-         <li>
-            @auth
+         @auth
+         <li> 
             <a href="{{ route('dashboard.index') }}">Dashboard</a>
-            @endauth
          </li>
-
+         @endauth
          <li>
             <a href="">About Us</a>
          </li>
