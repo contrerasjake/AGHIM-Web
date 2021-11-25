@@ -43,8 +43,8 @@
                 <span>or sign in with</span>
             </div>
             <div class="btn-wrapper">
-                <a href="#" class="btn"><span class="fb logo fa fa-facebook"></span>Facebook</a>
-                <a href="#" class="btn"><span class="google logo fa fa-google fa-fw"></span>Google</a>
+                <a href="{{ route('facebook.login') }}" class="btn"><span class="fb logo fa fa-facebook"></span>Facebook</a>
+                <a href="{{ route('google.login') }}" class="btn"><span class="google logo fa fa-google fa-fw"></span>Google</a>
             </div>
             <h5 style="text-align:center">Don't have an account yet? <a href="{{ route('register') }}"><u>Register Now.</u></a></h5>
         </div>
