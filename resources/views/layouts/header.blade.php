@@ -21,11 +21,6 @@
          <li>
             <a href="{{ route('home') }}">Home</a>
          </li> 
-         @auth
-         <li> 
-            <a href="{{ route('dashboard.index') }}">Dashboard</a>
-         </li>
-         @endauth
          <li>
             <a href="">About Us</a>
          </li>
@@ -41,7 +36,7 @@
                 <a href="/">Services</a>
                 <!-- DROPDOWN MENU -->
                 <ul class="dropdown">
-                    <li><a href="/">Food Delivery </a></li>
+                    <li><a href="{{ route('food_delivery.index') }}">Food Delivery </a></li>
                     <li><a href="/">Package Delivery</a></li>
                     <li><a href="/">Car Rental</a></li>
                 </ul>
