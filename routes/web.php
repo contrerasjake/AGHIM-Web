@@ -1,12 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\Auth\FacebookSocialiteController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controllers\Services\FoodDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
 
@@ -32,6 +33,19 @@ Route::prefix('facebook')->name('facebook.')->group( function(){
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/email/verify', [VerificationController::class, 'show'])->name('verification.notice');
+    Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify')->middleware(['signed']);
+    Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
+});
+
+//only authenticated can access this group
+Route::group(['middleware' => ['auth']], function() {
+    //only verified account can access with this group
+    Route::group(['middleware' => ['verified']], function() {
+        Route::get('/food_delivery', [FoodDeliveryController::class, 'index'])->name('food_delivery.index');
+    });
+});
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 Route::get('/profile/address', [ProfileAddressController::class, 'index'])->name('address');
