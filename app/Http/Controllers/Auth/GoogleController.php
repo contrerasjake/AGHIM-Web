@@ -41,6 +41,7 @@ class GoogleController extends Controller
                 ]);
                 $saveUser = User::where('email', $user->getEmail())->first();
             }
+          
             Auth::loginUsingId($saveUser->id);
 
             return redirect()->route('home');

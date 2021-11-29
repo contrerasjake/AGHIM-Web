@@ -8,6 +8,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Services\FoodDeliveryController;
+use App\Http\Controllers\Profiles\ProfileController;
+use App\Http\Controllers\Profiles\ProfileAddressController;
 
 Route::get('/', function(){
     return view('home');
@@ -44,3 +46,6 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('/food_delivery', [FoodDeliveryController::class, 'index'])->name('food_delivery.index');
     });
 });
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+Route::get('/profile/address', [ProfileAddressController::class, 'index'])->name('address');
