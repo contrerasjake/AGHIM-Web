@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -32,14 +33,14 @@ class GoogleController extends Controller
                     'email' => $user->getEmail(),
                     'password' => Hash::make($user->getName().'@'.$user->getId())
                 ]);
-                event(new Registered($user));
+
+                event(new Registered($saveUser));
             }else{
                 $saveUser = User::where('email',  $user->getEmail())->update([
                     'google_id' => $user->getId(),
                 ]);
                 $saveUser = User::where('email', $user->getEmail())->first();
             }
-
             Auth::loginUsingId($saveUser->id);
 
             return redirect()->route('home');

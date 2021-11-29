@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Socialite;
 use Auth;
@@ -49,11 +50,11 @@ class FacebookSocialiteController extends Controller
                     'password' => encrypt('my-facebook')
                 ]);
                 
-                event(new Registered($user));
+                event(new Registered($newUser));
 
                 Auth::login($newUser);
       
-                return redirect('/home');
+                return redirect()->route('home');
             }
      
         } catch (Exception $e) {
