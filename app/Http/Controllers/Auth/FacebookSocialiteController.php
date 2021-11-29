@@ -48,8 +48,7 @@ class FacebookSocialiteController extends Controller
                     'social_id'=> $user->id,
                     'social_type'=> 'facebook',
                     'password' => encrypt('my-facebook')
-                ]);
-                
+                ]); 
                 event(new Registered($newUser));
 
                 Auth::login($newUser);
