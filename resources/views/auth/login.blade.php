@@ -10,8 +10,8 @@
             <form action="{{ route('login') }}" method="post">
                 @csrf
                 <div class="input-container">
-                    <label for="email">Email</label>
-                    <input class="input-field" type="text" name="email" id="email" placeholder="Your Email" value="{{ old('email') }}"
+                    <label for="email">Email or Phone Number</label>
+                    <input class="input-field" type="text" name="email" id="email" placeholder="Email or Phone Number" value="{{ old('email') }}"
                         @error('email')
                             style="border-color:red"        
                         @enderror 
