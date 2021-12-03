@@ -49,3 +49,4 @@ Route::group(['middleware' => ['auth']], function() {
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 Route::get('/profile/address', [ProfileAddressController::class, 'index'])->name('address');
+Route::get('/profile/address/edit', [ProfileAddressController::class, 'edit'])->name('address/edit');
