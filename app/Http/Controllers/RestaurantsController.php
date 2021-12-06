@@ -6,6 +6,7 @@ use App\Models\Restaurant;
 use App\Http\Requests\StoreRestaurantRequest;
 use App\Http\Requests\UpdateRestaurantRequest;
 use App\Http\Resources\RestaurantsResource;
+use App\Http\Requests\RestaurantsRequest;
 class RestaurantsController extends Controller
 {
     /**
@@ -15,7 +16,7 @@ class RestaurantsController extends Controller
      */
     public function index()
     {
-        //
+        return RestaurantsResource::collection(Restaurant::all());
     }
 
     /**
@@ -34,9 +35,13 @@ class RestaurantsController extends Controller
      * @param  \App\Http\Requests\StoreRestaurantRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreRestaurantRequest $request)
+    public function store(RestaurantsRequest $request)
     {
-        //
+        $restaurant = Restaurant::create([
+            'name' => $request->input('name')
+        ]);
+
+        return new RestaurantsResource($restaurant);
     }
 
     /**
@@ -68,9 +73,13 @@ class RestaurantsController extends Controller
      * @param  \App\Models\Restaurant  $restaurant
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateRestaurantRequest $request, Restaurant $restaurant)
+    public function update(RestaurantsRequest $request, Restaurant $restaurant)
     {
-        //
+        $restaurant->update([
+            'name' =>  $request->input('name')
+        ]);
+
+        return new RestaurantsResource($restaurant);
     }
 
     /**
@@ -81,6 +90,7 @@ class RestaurantsController extends Controller
      */
     public function destroy(Restaurant $restaurant)
     {
-        //
+        $restaurant->delete();
+        return response(null, 204);
     }
 }

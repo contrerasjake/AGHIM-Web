@@ -17,5 +17,6 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
     Route::get('/user', function(Request $request){
         return $request->user();
     });
-    Route::get('/restaurants/{restaurant}', [RestaurantsController::class, 'show']);
+
+    Route::apiResource('/restaurants', RestaurantsController::class);
 });
