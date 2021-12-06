@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Services\FoodDeliveryController;
+use App\Http\Controllers\Services\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
 use App\Http\Controllers\Profiles\ProfileBooking;
@@ -49,5 +50,9 @@ Route::group(['middleware' => ['auth']], function() {
 });
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/profile/address', [ProfileAddressController::class, 'index'])->name('address');
+
+Route::get('/profile/book', [ProfileBooking::class, 'index'])->name('book');
 Route::get('/profile/address/edit', [ProfileAddressController::class, 'edit'])->name('address/edit');
 Route::get('/profile/book', [ProfileBooking::class, 'index'])->name('book');
+
+Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery');
