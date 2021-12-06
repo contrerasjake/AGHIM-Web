@@ -5,6 +5,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" type="text/css" href="{{ asset('css/profileAddress.css') }}" >
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initialize" async defer></script>
+    <script src="{{ asset('js/mapInput.js') }}"></script>
    <title>Profile</title>
    <title>Profile</title>
  </head>
@@ -102,63 +105,33 @@
         <!--display container-->
         <div class="display-section">
             <div class="upper-container">
-
                 <div class="icon-menu-container">
                     <img src="{{ asset('svg/location-2055.svg')}}" alt="">    
                 </div>
 
                 <div class="title-menu-container">
-                    <h1>Address</h1>
-                </div>
-
-            </div>
-            
-            <div class="lower-container">
-                <div class="info-container">
-                    <div class="address-info">
-                        <div class="name-label">
-                            <p>Full Name:</p>
-                        </div>
-
-                        <div class="name">
-                            <span>John Doe</span>
-                        </div>
-                    </div>
-
-                    <div class="address-info">
-                        <div class="name-label">
-                            <p>Contact Number:</p>
-                        </div>
-
-                        <div class="name">
-                            <span>09123456789</span>
-                        </div>
-                    </div>
-
-                    <div class="address-info">
-                        <div class="name-label">
-                            <p>Address:</p>
-                        </div>
-
-                        <div class="name">
-                            <span>Manila Baywalk Dolomite Beach</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="edit-address">
-                    <div class="edit-button">
-                        <a href="{{ route('address/edit') }}">Edit</a>
-                    </div>
+                    <h1>Edit Address</h1>
+                    <a href="#" class="save-button">SAVE</a>
                 </div>
             </div>
-            
+            <div class="form-group">
+                <label for="address_name">Name</label>
+                <input type="text" id="address-name" name="address_name" class="form-control" placeholder="Name this Address">
+                <label for="address_name">Contact Number</label>
+                <input type="tel" id="address-contact" name="address_contact" class="form-control" placeholder="Contact Number" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                <label for="address_address">Address</label>
+                <input type="text" id="address-input" name="address_address" class="form-control map-input" placeholder="Enter your Address">
+                <input type="hidden" name="address_latitude" id="address-latitude" value="0" />
+                <input type="hidden" name="address_longitude" id="address-longitude" value="0" />
+            </div>
+            <div id="address-map-container" style="width:100%;height:400px; ">
+                <div style="width: 100%; height: 100%" id="address-map"></div>
+            </div>
         </div>
     </div>
-
-
-
-
+            
  </body>
 </html>
+
+
+
