@@ -127,6 +127,11 @@
     margin-right: 15px;
 }
 
+.title-menu-container {
+    position: relative;
+    width: 100%;
+}
+
 .title-menu-container h1 {
     font-family: Montserrat;
     font-style: normal;
@@ -134,7 +139,7 @@
     font-size: 26px;
     line-height: 36px;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .lower-container {
@@ -183,6 +188,29 @@
     font-family: Montserrat;
 }
 
+.form-control {
+    display: block;
+    width: 25%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.save-button {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .75rem;
+    background-color: darkgoldenrod;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 3;
+    border-radius: 20px;
+    transition: 0.2s;
+}
 
 
 
