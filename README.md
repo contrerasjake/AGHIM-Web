@@ -15,6 +15,7 @@ AGHIM Web App is an all-in-one online platform that offers a variety of services
 ## Built With
 * Laravel
 * Blade
+* MySQL
 
 ## Getting Started
 
