@@ -9,8 +9,7 @@
 
 ## About The Project
 
-![](img/Homepage_Screenshot.jpeg)
-
+![Homepage_Screenshot](https://user-images.githubusercontent.com/59276477/144969676-2af254f2-e00c-4705-a2b3-394a50ce4be3.jpeg)
 AGHIM Web App is an all-in-one online platform that offers a variety of services including food delivery, package delivery, and car rentals. 
 
 ## Built With
