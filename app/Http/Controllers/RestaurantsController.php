@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Restaurant;
-use App\Http\Requests\StoreRestaurantRequest;
-use App\Http\Requests\UpdateRestaurantRequest;
 use App\Http\Resources\RestaurantsResource;
 use App\Http\Requests\RestaurantsRequest;
 class RestaurantsController extends Controller

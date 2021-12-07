@@ -9,4 +9,17 @@ class Restaurant extends Model
 {
     use HasFactory;
     protected $fillable = ['name'];
+
+
+    public function food() 
+    {
+        return $this->hasManyThrough(
+            '\App\Models\Food', 
+            '\App\Models\RestaurantFood',
+            'restaurant_id',
+            'id',
+            'id',
+            'food_id',
+        );
+    }
 }
