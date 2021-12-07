@@ -14,7 +14,7 @@
 
             <div class="title-menu-container">
                 <h1>Edit Address</h1>
-                <a href="#" class="save-button">SAVE</a>
+                <a href="/profile/address" class="save-button">SAVE</a>
             </div>
         </div>
         <div class="form-group">
