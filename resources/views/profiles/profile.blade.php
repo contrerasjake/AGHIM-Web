@@ -12,7 +12,13 @@
         </div>
 
         <div class="title-menu-container">
-            <h1>Personal Details</h1>
+            <h1>Personal Information</h1>
+            
+            <div class="edit-address">
+                <div class="edit-button">
+                    <a href="{{ route('profile/edit') }}">Edit</a>
+                </div>
+            </div>
         </div>
     </div>  
     <div class="lower-container">
