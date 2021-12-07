@@ -20,7 +20,9 @@ AGHIM Web App is an all-in-one online platform that offers a variety of services
 ## Getting Started
 
 ### Prerequisites
-Use the package manager [composer](https://getcomposer.org/download/) to install the app.
+- Use the package manager [composer](https://getcomposer.org/download/) to install the app.
+- Laravel
+- XAMPP
 
 ### Installation
 1. Clone the repo
