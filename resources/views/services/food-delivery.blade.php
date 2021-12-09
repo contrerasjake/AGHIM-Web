@@ -1,180 +1,108 @@
 @extends('layouts.app')
 @section('content')
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/food-delivery.css') }}" >
 
-<div class = "storePromos">
-    <i class = "arrow left"></i>
 
-    <div class = "promosPhoto">
-        <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-    </div>
-
-
-    <div class = "promoTitle">
-        <h2>CAROUSEL FOOD DISPLAY</h2>
-        <h2>(STORE PROMOS HERE)</h2>
+<div class = "serviceInfo-container">
+    <div class = "serviceStatement">
+        Hungry? You're in the right place
         
-            <div class =  "promoInfo">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat quam, venenatis eu metus et, lacinia efficitur elit. Vestibulum sit amet ligula molestie, suscipit leo eget, ultricies ex. Nullam gravida pretium pretium. Donec iaculis et tellus facilisis vulputate. Morbi scelerisque, sapien sit amet posuere feugiat, sapien nunc cursus nibh, sit amet venenatis erat elit eget turpis. Donec ut lectus eleifend, aliquet diam ut, finibus diam. Sed libero nunc, congue cursus enim id, sodales pharetra ante. Nunc sed iaculis quam. Morbi vehicula sit amet sapien quis posuere.
-            </div>
-            
-    </div>
-    
-    <i class = "arrow right"></i>
+        <div class = "serviceInfo">
+            Order your products any time and we will deliver it directly to your home
+        </div>
+        <div class="order-btn">
+           <a href="{{ route('browse_restaurant') }}"class = "button">Order now</a>
+        </div>
 
+    </div>
+    <div class = "servicePhoto">
+        <img src="{{ URL ('img/picnic.png') }}" alt="" > 
+    </div>
+
+</div>
+
+<div class = "three-steps">
+        THREE EASY STEPS
+</div>
+<div class = "steps-container">
+    <div class = "img-container">
+        <div class = "chef-container">
+            <img src="{{ URL ('img/chef.png') }}" alt="" > 
+        </div>
+        <div class = "steps-details">
+            Browse the menu and fill your basket with your favorite food!
+        </div>
+    </div>
+    <div class = "img-container">
+        <div class = "order-container">
+            <img src="{{ URL ('img/order.png') }}" alt="" > 
+        </div>
+        <div class = "steps-details">
+            Your order will be immediately collected and sent by our courier,
+        </div>
+    </div>
+    <div class = "img-container">
+        <div class = "food-container">
+            <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
+        </div>
+        <div class = "steps-details">
+            Pick up the delivery at your door and enjoy.
+        </div>
+    </div>
+</div>
+
+<div class = "btn-container">
+    <div class="order-btn">
+            <a href="{{ route('browse_restaurant') }}"class = "button">Order now</a>
+    </div>
 </div>
 
 
 
-<div class = "greetings">
 
-    <div class="searchContainer">
-        <i class="fa fa-search searchIcon"></i>
-        <input class="searchBox" type= "search" name = "search" placeholder="What are you craving?">
-    </div>
-    <div class= "basket">
-        <i class="fa fa-shopping-basket"></i>
-    </div>
-    <h2> Good Morning, Juan Dela Cruz!</h2>
-    <p>Find the best food for you<p>
+<hr class="divider">
 
-</div>
-<div class = "restaurantGrid">
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
+    <div class="testimonial-container">
+        <div class="testimonial-title">
+                <p>TESTIMONIALS</p>
+        </div>
+        
+        <div class="testimonials">
+
+            <div class="box">
+                <div class="testimonials-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla est ullamcorper eget nulla facilisi etiamLorem ipsum dolor sit amet.
+                </div>
+
+                <div class="name">
+                    Juan Dela Cruz
+                </div>
             </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
+
+            <div class="box">
+                <div class="testimonials-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla est ullamcorper eget nulla facilisi etiamLorem ipsum dolor sit amet.
+                </div>
+                <div class="name">
+                    Juan Dela Cruz
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="testimonials-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla est ullamcorper eget nulla facilisi etiamLorem ipsum dolor sit amet.
+                </div>
+                <div class="name">
+                    Juan Dela Cruz
+                </div>
             </div>
         </div>
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div> 
-        <div class = "restaurant">
-            <div class = "restaurantPhoto">
-                <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
-            </div>
-            <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
-                <p>Distance</p>
-                <p>Time</p>
-                <p>Ratings</p>
-            </div>
-        </div>    
+    </div>
 </div>
+        
 
 <div class="text">
     <p> to be followed</p>
@@ -196,15 +124,16 @@
     <div class="footer">
         FOOTER
     </div>
+    
 
     <div class="mast">
         <div class="terms">Terms of Use</div>
             <div class="privacy">Privacy Policy</div>
             <div class="aghim-footer">©AGHIM</div>
         </div>
-</div>
+</div
 
-    
+
 
 
 @endsection
