@@ -18,6 +18,8 @@ class LoginController extends Controller{
         
         if(!auth()->attempt($request->only('email', 'password'))){
             return back()->with('status', 'Invalid login credentials');
+        }else{
+            $token = auth()->user()->createToken('LaravelAuthApp')->accessToken;
         }
 
         return redirect()->route('home');

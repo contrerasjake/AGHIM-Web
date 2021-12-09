@@ -38,6 +38,7 @@ class RegisterController extends Controller
 
         //sign in
         auth()->attempt($request->only('email', 'password'));
+        $token = auth()->user()->createToken('LaravelAuthApp')->accessToken;
         
         //redirect
         return redirect()->route('home');
