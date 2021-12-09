@@ -47,10 +47,6 @@ Route::group(['middleware' => ['auth']], function() {
     });
 });
 
-Route::get('/profile/address', [ProfileAddressController::class, 'index'])->name('address');
-
-
-
 Route::get('/food_delivery/browse_restaurant', [BrowseRestaurantController::class, 'index'])->name('browse_restaurant');
 
 Route::prefix('profile')->group( function(){
