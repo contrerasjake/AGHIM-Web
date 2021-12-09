@@ -35,6 +35,9 @@
                         </div>
                     @enderror
                 </div>
+                @if (session('status'))
+                    <div style="margin-top: 1rem; text-align:center; color:red">{{session('status')}}</div>
+                @endif
                 <div>
                     <button class="main-button" type="submit">LOGIN</button>
                 </div>
