@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.storePromos {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    border-style: groove;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    
+}
+.promoInfo{
+font-family: montserrat;
+max-width: 100%;
+max-height: 100%;
+font-size: large;
+}
+
+.promosPhoto img{
+    max-width: 90%;
+    max-height: auto;
+    padding: 10px 0;
+}
+
+.restaurantGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    padding-left: 55px;
+}
+.greetings{
+    font-family: Montserrat;
+    margin: 40px;
+}
+
+.searchContainer {
+    float: right;
+    display: inline-flex;
+    padding-right: 100px;
+    margin-right: 30px;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    position: relative;
+    border: 2px solid #ccc;
+    border-style: groove;
+    overflow: hidden;
+    
+  }
+  
+.searchIcon {
+    padding: 0.4rem;
+}
+  
+.searchBox {
+    border: 0;
+    padding: .5rem .5rem .5rem 0;
+    font-family: Montserrat;
+}
+
+.basket{
+    float: right;
+    margin: 5px;
+    margin-top: 7px;
+    padding-right: 10px;
+    font-size: x-large;
+    
+}
+
+
+.restaurant{
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    max-width: 90%;
+    max-height: auto;
+    border-radius: 20px;
+}
+
+.restaurantPhoto img{
+    max-width: 80%;
+    max-height: 100%;
+    padding: 10px 0;
+    margin: 20px;
+    margin-bottom: 0px;
+
+}
+
+.restaurantDetails{
+    font-family: Montserrat;
+    padding: 10px;
+}
+
+.image{
+    font-size: 1000%;
+    float: left;
+    padding: 20px;
+    margin-left: 100px;
+    color: #202020;
+}
+.details{
+    font-family: Montserrat;
+    font-size: large;
+    text-align: center;
+    color: #202020;
+
+}
+
+.text{
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.link{
+    float: right;
+    margin-right: 150px;
+    margin-top: 50px;
+    font-family: Montserrat;
+    word-spacing: 200px;
+    font-size: 30px;
+}
+
+.bottom {
+    position: relative;
+    top: 5vw;
+    width: 100%;
+}
+
+.footer {
+    float: right;
+    height: 20vw;
+    width: 50%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    line-height: 5vw;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-right: 200px;
+    background: #EAEFF2;
+}
+
+.mast {
+    position: absolute;
+    height: 8vw;
+    width: 100%;
+    top: 20vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    line-height: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #363A45;
+}
+
+.terms {
+    padding: 0 20px;
+}
+
+.privacy {
+    padding: 0 20px;
+}
+
+.aghim-footer {
+    padding: 0 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: none;
+    }
+}
