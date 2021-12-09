@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Services\FoodDeliveryController;
+use App\Http\Controllers\Services\BrowseRestaurantController;
 use App\Http\Controllers\Services\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
@@ -42,6 +43,7 @@ Route::group(['middleware' => ['auth']], function() {
     //only verified account can access with this group
     Route::group(['middleware' => ['verified']], function() {
         Route::get('/food_delivery', [FoodDeliveryController::class, 'index'])->name('food_delivery.index');
+        Route::get('/browse_restaurant', [BrowseRestaurantController::class, 'index'])->name('browse_restaurant');
         Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery.index');
     });
 });
