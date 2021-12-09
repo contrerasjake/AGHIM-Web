@@ -1,7 +1,9 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
-
 @extends('layouts.app')
+
+@section('head')
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
+@endsection
 
 @section('content')
 
@@ -135,19 +137,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="bottom">
-            <div class="footer">
-                FOOTER
-            </div>
-
-            <div class="mast">
-                <div class="terms">Terms of Use</div>
-                <div class="privacy">Privacy Policy</div>
-                <div class="aghim-footer">©AGHIM</div>
-            </div>
-
         </div>
 </body>
     
