@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Profiles;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProfileAddressController extends Controller
+class ProfileBooking extends Controller
 {
 
     public function __construct()
@@ -14,11 +14,7 @@ class ProfileAddressController extends Controller
     }
     
     public function index(){
-        return view('profiles.profileAddress');
-    }
-    
-    public function editAddress(){
-        return view('profiles.profileEditAddress');
+        return view('profiles.profileBooking');
     }
     
 }
