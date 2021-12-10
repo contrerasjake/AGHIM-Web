@@ -4,7 +4,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   @yield('header')
+   @yield('head')
    <style>
        .active{
         text-decoration: underline;
@@ -30,7 +30,7 @@
                 </div>
             
                 <div class="username-container">
-                        <h3 class="username">John Doe</h3>
+                        <h3 class="username">{{auth()->user()->name}}</h3>
                         <p class="verified">Verified User</p>
                 </div>
             </div>

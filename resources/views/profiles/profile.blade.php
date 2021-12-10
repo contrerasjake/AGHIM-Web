@@ -1,5 +1,5 @@
 @extends('layouts.profile')
-@section('header')
+@section('head')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css') }}" >
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}" >
 @endsection
@@ -26,12 +26,12 @@
             <div class="info-container-1">
                 <div class="info">
                     <h4>Name</h4>
-                    <h3>John Doe</h3>
+                    <h3>{{auth()->user()->name}}</h3>
                 </div>
 
                 <div class="info">
                     <h4>Email</h4>
-                    <h3>john_doe@gmail.com</h3>
+                    <h3>{{auth()->user()->email}}</h3>
                 </div>
 
                 <div class="info">
@@ -42,7 +42,7 @@
             <div class="info-container-1">
                 <div class="info">
                     <h4>Username</h4>
-                    <h3>johndoe69</h3>
+                    <h3>{{auth()->user()->email}}</h3>
                 </div>
 
                 <div class="info">
