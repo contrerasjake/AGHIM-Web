@@ -30,7 +30,7 @@
                 </div>
             
                 <div class="username-container">
-                        <h3 class="username">John Doe</h3>
+                        <h3 class="username">{{auth()->user()->name}}</h3>
                         <p class="verified">Verified User</p>
                 </div>
             </div>
