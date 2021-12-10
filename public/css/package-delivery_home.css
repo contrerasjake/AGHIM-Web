@@ -14,7 +14,8 @@
     padding-top: 20px;
 }
 
-.title {
+.head-title {
+    padding-top: 20px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -53,12 +54,12 @@
 }
 
 .service-photo img{
+    display: flex;
     align-items: center;
     transform: scaleX(-1);
     height: 290px;
     width: 572px;
     margin: 200px 0px -152px 100px;
-    flex: 1;
 }
 
 .pickup-location img{

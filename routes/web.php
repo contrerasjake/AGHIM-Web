@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Services\FoodDeliveryController;
+use App\Http\Controllers\Services\Package_formReviewController;
 use App\Http\Controllers\Services\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
@@ -54,3 +55,5 @@ Route::prefix('profile')->group( function(){
     Route::get('address/edit', [ProfileAddressController::class, 'edit'])->name('address/edit');
     Route::get('book', [ProfileBooking::class, 'index'])->name('book');
 });
+
+Route::get('/package_delivery/form-review', [Package_formReviewController::class, 'index'])->name('package_formReview.index');

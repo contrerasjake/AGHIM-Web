@@ -9,7 +9,7 @@
             <img src="{{ URL ('svg\drawkit-transport-scene-6.png') }}" alt="" >       
         </div>
 
-        <div class="title">
+        <div class="head-title">
             <p>Your Easiest Way to Deliver</p>
         </div>
 
@@ -49,6 +49,7 @@
                     <button>BOOK NOW!</button>
                 </div>
             </div>
+            
         </div>
 
         <div class="track">
