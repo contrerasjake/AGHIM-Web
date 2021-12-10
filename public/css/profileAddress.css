@@ -6,22 +6,7 @@
 
 .profile-container{
     display: flex;
-    
     padding: 20px;
-}
-
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    
-}
-
-.sidebar-profile-pic {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #efefef;;
-    padding-right: 25px;
 }
 
 .profile-container .sidebar .profile-container .profile-pic {
@@ -84,7 +69,6 @@
 .a-container {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
 }
 
 .button-container {
