@@ -1,6 +1,7 @@
 @extends('layouts.profile')
 @section('header')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profileAddress.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}" >
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initialize" async defer></script>
     <script src="{{ asset('js/mapInput.js') }}"></script>
