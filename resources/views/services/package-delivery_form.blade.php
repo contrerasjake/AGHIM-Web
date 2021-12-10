@@ -26,8 +26,9 @@
                     Pickup Location
                 </div>
 
-                <div class="address-details">
-                    Pickup location
+                <div class="location">
+                <img src="{{ URL ('svg\pickup.png') }}" alt="" >
+                <div class="location-text">Pickup location</div>
                 </div>
 
             </div>
@@ -37,8 +38,9 @@
                     Drop off Location
                 </div>
 
-                <div class="address-details">
-                    Drop off Location
+                <div class="location">
+                <img src="{{ URL ('svg\dropoff.png') }}" alt="" >
+                <div class="location-text">Drop off Location</div>
                 </div>
             </div>
 
@@ -49,8 +51,8 @@
                         Contact Person
                     </div>
 
-                    <div class="address-details">
-                        JOHN DOE
+                    <div class="contact">
+                        Contact Person
                     </div>
                 </div>
 
@@ -59,8 +61,8 @@
                         Contact Number
                     </div>
 
-                    <div class="address-details">
-                        09XXXXXXXXX
+                    <div class="contact">
+                        Contact Number
                     </div>
                 </div>
 
@@ -69,8 +71,8 @@
                         Email Address
                     </div>
 
-                    <div class="address-details">
-                        johndoe@example.com
+                    <div class="contact">
+                        Email Address
                     </div>
                 </div>
 
@@ -86,8 +88,14 @@
                         Pickup Date
                     </div>
 
-                    <div class="address-details">
-                        01/01/2021
+                    <div class="time-date">
+                        <div class="time-date_text">
+                            01/01/2021
+                        </div>  
+                        <div class="calendar">
+                            <img src="{{ URL ('svg\calendar.png') }}" alt="" >
+                        </div> 
+                        
                     </div>
                 </div>
 
@@ -96,8 +104,14 @@
                         Pickup Time
                     </div>
 
-                    <div class="address-details">
-                        9:00 AM
+                    <div class="time-date">
+                        <div class="time-date_text">
+                            9:00 AM
+                        </div>
+                        <div class="clock">
+                            <img src="{{ URL ('svg\clock.png') }}" alt="" >
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -109,16 +123,21 @@
                         Instructions to the Driver
                     </div>
 
-                    <div class="address-details">
-                        Lorem ipsum dolor sit amet. Non fugit aliquam non officiis architecto aut nisi internos in repellendus internos nam voluptate blanditiis non nobis iure aliquid ducimus. At placeat soluta eum saepe voluptatem qui totam qui mollitia perspiciatis sed excepturi quia est voluptate quisquam! Ut dolorum labore et ipsam sint et autem molestias.
+                    <div class="instruction-details">
+                        Optional
+                    </div>
+
+                    <div class="post">
+                        0 / 255 Characters
                     </div>
 
                     <div class="payment">
                         <div class="proceed">
-                            <button>Proceed to payment</button>
+                            <button><a href="{{ route('package_formReview.index') }}">Continue</a></button>
                         </div>
                     </div>
 
+                    
                 </div>
             </div>
         </div>

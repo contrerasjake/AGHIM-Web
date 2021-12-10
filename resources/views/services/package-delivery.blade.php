@@ -46,7 +46,7 @@
 
             <div class="book-now">
                 <div class="book">
-                    <button>BOOK NOW!</button>
+                    <button><a href="{{ route('package_form.index') }}">BOOK NOW!</a></button>
                 </div>
             </div>
             
@@ -74,7 +74,7 @@
             <div class="service-photo">
                 <img src="{{ URL ('svg\DrawKit-daily-life-vector-illustration-10.png') }}" alt="" >  
             </div>
-
+            
         </div>
 
     </div>
