@@ -17,7 +17,7 @@ class ProfileAddressController extends Controller
         return view('profiles.profileAddress');
     }
     
-    public function edit(){
+    public function editAddress(){
         return view('profiles.profileEditAddress');
     }
     

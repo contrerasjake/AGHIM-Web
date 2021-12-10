@@ -1,9 +1,11 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/package-delivery_home.css') }}" >
-
 @extends('layouts.app')
-@section('content')
 
+@section('head')
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/package-delivery_home.css') }}" >
+@endsection
+
+@section('content')
     <div class="title-contatiner">
         <div class="title-photo">
             <img src="{{ URL ('svg\drawkit-transport-scene-6.png') }}" alt="" >       
@@ -16,16 +18,11 @@
         <div class="title-description">
             <p>We provide on-demand  and scheduled delivery services through smartphone<br>
             applications and websites to connect you with our drivers.</p>
-        </div>
-        
+        </div>  
     </div>
 
-
-
     <div class="service-container">
-
         <div class="book">
-
             <div class="book-title">
                 <p>Send goods more easily <br> and quickly</p>
             </div>
@@ -74,11 +71,8 @@
             <div class="service-photo">
                 <img src="{{ URL ('svg\DrawKit-daily-life-vector-illustration-10.png') }}" alt="" >  
             </div>
-            
         </div>
-
     </div>
-
 
     <div class="body-title">
         <p>WHY CHOOSE US?</p>
@@ -106,12 +100,9 @@
                 <p><br>We have xxx number of happy customers<br>and it’s increasing! Check our reviews<br>section to get their feedbacks.</p>
             </div>
         </div>
-
     </div>
 
-
     <hr class="divider">
-
     <div class="review-title">
         <p>REVIEWS</p>
     </div>
@@ -144,20 +135,6 @@
                 <p>John Doe</p>
             </div>
         </div>
-
-    </div>
-
-    <div class="bottom">
-            <div class="footer">
-                FOOTER
-            </div>
-
-            <div class="mast">
-                <div class="terms">Terms of Use</div>
-                <div class="privacy">Privacy Policy</div>
-                <div class="aghim-footer">©AGHIM</div>
-            </div>
-
     </div>
 
 @endsection

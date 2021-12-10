@@ -1,6 +1,7 @@
 @extends('layouts.profile')
-@section('header')
+@section('head')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profileAddress.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}" >
 @endsection
 @section('content')
     <div class="display-section">

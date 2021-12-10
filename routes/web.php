@@ -51,14 +51,10 @@ Route::group(['middleware' => ['auth']], function() {
     });
 });
 
-//profile
 Route::prefix('profile')->group( function(){
     Route::get('', [ProfileController::class, 'index'])->name('profile');
+    Route::get('edit', [ProfileController::class, 'editProfile'])->name('profile/edit');
     Route::get('address', [ProfileAddressController::class, 'index'])->name('address');
     Route::get('book', [ProfileBooking::class, 'index'])->name('book');
-    Route::get('address/edit', [ProfileAddressController::class, 'edit'])->name('address/edit');
-    Route::get('book', [ProfileBooking::class, 'index'])->name('book');
+    Route::get('address/edit', [ProfileAddressController::class, 'editAddress'])->name('address/edit');
 });
-
-
-
