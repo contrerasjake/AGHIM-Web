@@ -26,33 +26,33 @@
             <div class="info-container-1">
                 <div class="info">
                     <h4>Name</h4>
-                    <h3>John Doe</h3>
+                    <h3>{{auth()->user()->name}}</h3>
                 </div>
 
                 <div class="info">
                     <h4>Email</h4>
-                    <h3>john_doe@gmail.com</h3>
+                    <h3>{{auth()->user()->email}}</h3>
                 </div>
 
                 <div class="info">
                     <h4>Contact Number</h4>
-                    <h3>09123456789</h3>
+                    <h3>{{auth()->user()->contact_number == null ? 'N/A' : auth()->user()->contact_number}}</h3>
                 </div>
             </div>            
             <div class="info-container-1">
                 <div class="info">
                     <h4>Username</h4>
-                    <h3>johndoe69</h3>
+                    <h3>{{auth()->user()->username == null ? 'N/A' : auth()->user()->username}}</h3>
                 </div>
 
                 <div class="info">
                     <h4>Date of birth</h4>
-                    <h3>mm/dd/yyyy</h3>
+                    <h3>{{auth()->user()->date_of_birth == null ? 'mm/dd/yyyy' : auth()->user()->date_of_birth}}</h3>
                 </div>
 
                 <div class="info">
                     <h4>Gender</h4>
-                    <h3>N/A</h3>
+                    <h3>{{auth()->user()->gender == null ? 'N/A' : auth()->user()->gender}}</h3>
                 </div>
             </div>
         </div>

@@ -5,13 +5,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    @yield('head')
-   <style>
-       .active{
-        text-decoration: underline;
-        -webkit-text-stroke: thin;
-       }
-   </style>
-   <title>Profile</title>
    <title>Profile</title>
  </head>
  <body>
@@ -30,43 +23,43 @@
                 </div>
             
                 <div class="username-container">
-                        <h3 class="username">John Doe</h3>
-                        <p class="verified">Verified User</p>
+                        <h3 class="username">{{auth()->user()->name}}</h3>
+                        <p class="verified">{{auth()->user()->hasVerifiedEmail() ? 'Verified User' : 'Unverified User'}}</p>
                 </div>
             </div>
            <div class="button-container">
                 <a href="/profile" >
-                    <div class="a-container">
+                    <div class="a-container {{request()->is('profile') ? 'active' : '' }}">
                         <div class="icon">
                             <img src="{{ asset('svg/user-3296.svg')}}" alt="">
                         </div>
 
                         <div class="icon-text">
-                            <span class="{{request()->is('profile') ? 'active' : '' }}">Personal Details</span>
+                            Personal Details
                         </div>
                     </div>
                 </a>
 
                 <a href="/profile/address">
-                    <div class="a-container">
+                    <div class="a-container {{request()->is('profile/address') ? 'active' : '' }}">
                         <div class="icon">
                             <img src="{{ asset('svg/location-2055.svg')}}" alt="">
                         </div>
 
                         <div class="icon-text">
-                            <span class="{{request()->is('profile/address') ? 'active' : '' }}">Address</span>
+                            Address
                         </div>
                     </div>
                 </a>
 
                 <a href="/profile/book" >
-                    <div class="a-container">
+                    <div class="a-container {{request()->is('profile/book') ? 'active' : '' }}">
                         <div class="icon">
                             <img src="{{ asset('svg/delivery-9161.svg')}}" alt="">
                         </div>
 
                         <div class="icon-text">
-                            <span class="{{request()->is('profile/book') ? 'active' : '' }}">Book</span>
+                            Book
                         </div>
                     </div>
                 </a>
@@ -77,7 +70,7 @@
                         </div>
 
                         <div class="icon-text">
-                            <span>Payment Method</span>
+                            Payment Method
                         </div>
                     </div>
                 </a>
@@ -89,7 +82,7 @@
                         </div>
 
                         <div class="icon-text">
-                            <span>Notifications</span>
+                            Notifications
                         </div>
                     </div>
                 </a>
@@ -101,7 +94,7 @@
                         </div>
 
                         <div class="icon-text">
-                            <span>Settings</span>
+                            Settings
                         </div>
                     </div>
                 </a>
