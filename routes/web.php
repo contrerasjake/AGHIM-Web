@@ -48,6 +48,8 @@ Route::group(['middleware' => ['auth']], function() {
     });
 });
 
+Route::get('/food_delivery/browse_restaurant', [BrowseRestaurantController::class, 'index'])->name('browse_restaurant');
+
 Route::prefix('profile')->group( function(){
     Route::get('', [ProfileController::class, 'index'])->name('profile');
     Route::get('edit', [ProfileController::class, 'editProfile'])->name('profile/edit');
