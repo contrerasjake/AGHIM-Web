@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\FoodsController;
 use App\Http\Controllers\RestaurantsController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\OrderDetailsController;
+use App\Http\Controllers\PaymentDetailsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 /*
@@ -21,4 +24,7 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
 
     Route::apiResource('/restaurants', RestaurantsController::class);
     Route::apiResource('/foods', FoodsController::class);
+    Route::apiResource('/payment-details', PaymentDetailsController::class);
+    Route::apiResource('/order-details', OrderDetailsController::class);
+    Route::apiResource('/orders', OrderController::class);
 });

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreFoodRequest extends FormRequest
+class OrderDetailsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class StoreFoodRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class StoreFoodRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'users_id'=> 'required|max:255',
+            'restaurants_id' => 'required|max:255',
+            'amount' => 'required|max:255'
         ];
     }
 }
