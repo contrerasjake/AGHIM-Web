@@ -1,8 +1,14 @@
 @extends('layouts.app')
+
+@section('head')
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/browse-restaurant.css') }}" >
+@endsection
+
+
 @section('content')
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/browse-restaurant.css') }}" >
+
 
 <div class = "storePromos">
     <i class = "arrow left"></i>
@@ -176,33 +182,6 @@
         </div>    
 </div>
 
-<div class="text">
-    <p> to be followed</p>
-</div>
-
-<div class="link">
-    <p> Links Links Links Links</p>
-</div>
-
-
-<div class="bottom">
-    <div class="image">
-        <i class="fa fa-image"></i>
-        <div class="details">
-            <p>Address<p>
-            <p>Contact Number<p>
-        </div>
-    </div>
-    <div class="footer">
-        FOOTER
-    </div>
-
-    <div class="mast">
-        <div class="terms">Terms of Use</div>
-            <div class="privacy">Privacy Policy</div>
-            <div class="aghim-footer">©AGHIM</div>
-        </div>
-</div>
 
     
 
