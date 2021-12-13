@@ -41,7 +41,7 @@
         <input class="searchBox" type= "search" name = "search" placeholder="What are you craving?">
     </div>
     <div class= "basket">
-        <i class="fa fa-shopping-basket"></i>
+        <a href="{{ route('browse_restaurant') }}" class="fa fa-shopping-basket"></a> 
     </div>
     <h2> Good Morning, Juan Dela Cruz!</h2>
     <p>Find the best food for you<p>
@@ -53,7 +53,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -64,7 +64,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -75,7 +75,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -86,7 +86,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -97,7 +97,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -108,7 +108,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -119,7 +119,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -130,7 +130,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -141,7 +141,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -152,7 +152,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -163,7 +163,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
@@ -174,7 +174,7 @@
                 <img src="{{ URL ('img/restaurants.png') }}" alt="" > 
             </div>
             <div class = "restaurantDetails">
-            <h3> Restaurant Name </h3>
+            <a href="{{ route('restaurant_menu') }}"><h3> Restaurant Name </h3></a>
                 <p>Distance</p>
                 <p>Time</p>
                 <p>Ratings</p>
