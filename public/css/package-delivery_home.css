@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+.title-containter {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-photo img{
+    max-width: 1408px;
+    max-height: 634px;
+    padding-left: 400px;
+    padding-top: 20px;
+}
+
+.head-title {
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 68px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.title-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*Yellow Container*/
+
+.service-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 350px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 100px 350px 100px 0px;
+    padding: 10px 0px 0px 0px;
+
+    min-width: 1500px;
+
+    background: rgba(255, 194, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 40px 40px 0px;
+}
+
+.book-title {
+    display: flex;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    align-items: center;
+    padding: 20px 0px 10px 50px;
+
+    color: #000000;
+}
+
+.book-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    padding-left: 50px;
+    margin-bottom: 0px;
+
+    color: #000000;
+}
+
+.book-now {
+    align-items: right;
+    text-align: right;
+    
+}
+
+.book button{
+    background: #FFC200;
+    border-color: FFC200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.pickup-location {
+    display: flex;
+    flex-direction: row;
+}
+
+.pickup-location img{
+    height: 50px;
+    width: 40px;
+    margin: 30px 0px -15px 30px;
+}
+
+.drop-off {
+    display: flex;
+    flex-direction: row;
+}
+
+.drop-off img{
+    height: 50px;
+    width: 40px;
+    margin: 30px 0px -15px 30px ;
+}
+
+.searchBoxLocation {
+    padding: 10px 300px 10px 10px;
+    margin: 30px 0px 0px 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.track{
+    display: flex;
+    flex-direction: column;
+}
+
+.track-title {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    align-items: center;
+    padding: 20px 0px 10px 50px;
+    flex: 1;
+
+    color: #000000;
+}
+
+.track-description {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    padding-left: 50px;
+    flex: 1;
+
+    color: #000000;
+}
+
+.search img{
+    height: 25px;
+    width: 25px;
+}
+
+.search button{
+    width: 63px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    margin: -61px 0px 0px 625px;
+
+    background: #FFC200;
+    border-color: #FFC200;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.searchBox {
+    padding: 10px 320px 10px 10px;
+    margin: 20px 0px 10px 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.service-photo img{
+    align-items: center;
+    transform: scaleX(-1);
+    height: 290px;
+    width: 572px;
+    margin: 200px 0px -152px 100px;
+}
+
+/*END*/
+
+.body-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.body-container {
+    display: flex;
+    margin-top: 100px;
+}
+
+.reliable {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 220px;
+    margin-right: 100px;
+    padding: 50px 50px 50px 50px;
+}
+
+.reliable-details {
+    align-items: center;
+    text-align: center;
+}
+
+.booking {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 100px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+}
+
+.booking-details {
+    align-items: center;
+    text-align: center;
+}
+
+.customer {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 50px 50px 50px 50px;
+}
+
+.customer-details {
+    align-items: center;
+    text-align: center;
+}
+
+.review-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.divider {
+    width: 95%;
+    margin: 150px 0px 150px 50px;
+}
+
+.review-container {
+    display: flex;
+}
+
+.review {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px 50px 0px 50px;
+    padding: 30px 30px 30px 30px;
+}
+
+.review-details {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+.review-name {
+    margin-top: 100px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    align-items: right;
+    text-align: right;
+    letter-spacing: 0.05em;
+}
+
+.bottom {
+    position: relative;
+    top: 5vw;
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    height: 20vw;
+    width: 100%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    line-height: 15vw;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    background: #EAEFF2;
+}
+
+.mast {
+    position: absolute;
+    height: 8vw;
+    width: 100%;
+    top: 20vw;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2vw;
+    line-height: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #363A45;
+}
+
+.terms {
+    padding: 0 20px;
+}
+
+.privacy {
+    padding: 0 20px;
+}
+
+.aghim-footer {
+    padding: 0 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: none;
+    }
+}
