@@ -10,6 +10,8 @@ use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Services\FoodDeliveryController;
 use App\Http\Controllers\Services\BrowseRestaurantController;
 use App\Http\Controllers\Services\RestaurantMenuController;
+use App\Http\Controllers\Services\OrderCartController;
+use App\Http\Controllers\Services\OrderReviewController;
 use App\Http\Controllers\Services\Package_formReviewController;
 use App\Http\Controllers\Services\Package_formController;
 use App\Http\Controllers\Services\PackageDeliveryController;
@@ -48,6 +50,10 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('/food_delivery', [FoodDeliveryController::class, 'index'])->name('food_delivery.index');
         Route::get('/food_delivery/browse_restaurant', [BrowseRestaurantController::class, 'index'])->name('browse_restaurant');
         Route::get('/food_delivery/browse_restaurant/restaurant_menu', [RestaurantMenuController::class, 'index'])->name('restaurant_menu');
+        Route::get('/food_delivery/order_cart', [OrderCartController::class, 'index'])->name('order_cart');
+        Route::get('/food_delivery/order_cart/order_review', [OrderReviewController::class, 'index'])->name('order_review');
+
+
         //package delivery
         Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery.index');
             Route::get('/package_delivery/form', [Package_formController::class, 'index'])->name('package_form.index');
