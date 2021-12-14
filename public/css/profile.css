@@ -2,9 +2,10 @@
 
 
 .active, .active > .icon-text{
-    background-color: darkgoldenrod;
-    color: white;
-   }
+    /* background-color: darkgoldenrod;
+    color: white; */
+    color:#FFC200;
+}
 
 .profile-container{
     display: flex;
@@ -92,9 +93,11 @@
     margin-bottom: 5px;
 }
 
+
+
 .a-container:hover, .a-container:hover > span, .a-container:hover > .icon-text{
-    background-color: darkgoldenrod;
-    color: white;
+    /* background-color: darkgoldenrod;
+    color: white; */
 }
 
 .button-container {
