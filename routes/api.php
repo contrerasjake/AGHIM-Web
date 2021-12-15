@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\FoodsController;
 use App\Http\Controllers\RestaurantsController;
+use App\Http\Controllers\CarsController;
+use App\Http\Controllers\CarOwnersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 /*
@@ -21,4 +23,6 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
 
     Route::apiResource('/restaurants', RestaurantsController::class);
     Route::apiResource('/foods', FoodsController::class);
+    Route::apiResource('/car_owners', CarOwnersController::class);
+    Route::apiResource('/cars', CarsController::class);
 });
