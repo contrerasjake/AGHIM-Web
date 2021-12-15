@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.body{
+	background:white;
+	
+}
+.container{
+    position: absolute;
+    border: 15px ;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-top: 10%;
+    margin-left: 23%;
+    margin-right: 30%;
+    justify-content: center;
+
+	background:#f7f7f7;
+    box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+}
+.logo-cart{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 20px;
+}
+
+.deliver-to{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.addressContainer {
+    float: right;
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  
+.addressBox {
+    border-style: none;
+    padding: .5rem .85rem .5rem;
+    font-family: Montserrat;
+    width: 685px;
+    height: 38px;
+    background: #e0e0e0;
+    outline: none;
+    
+}
+
+.order-summary{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+.food-details{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4px;
+    margin-top: 10px;
+
+    font-family: Montserrat;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    
+    
+}
+
+.price{
+    margin-left: 130px;
+    padding-top: 2px ;
+}
+
+.total{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.subtotal{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+.delivery-fee{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.order-btn  a{
+
+    color: #000000;
+    border: 2px solid #FFC200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    padding: 10px 25px;
+    float: right;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: none;
+    }
+}
