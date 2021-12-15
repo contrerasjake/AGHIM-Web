@@ -118,7 +118,6 @@
                             <button>Proceed to payment</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
