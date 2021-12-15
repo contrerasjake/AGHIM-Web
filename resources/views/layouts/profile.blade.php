@@ -24,7 +24,7 @@
             
                 <div class="username-container">
                         <h3 class="username">{{auth()->user()->name}}</h3>
-                        <p class="verified">Verified User</p>
+                        <p class="verified">{{auth()->user()->hasVerifiedEmail() ? 'Verified User' : 'Unverified User'}}</p>
                 </div>
             </div>
            <div class="button-container">

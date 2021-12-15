@@ -33,8 +33,22 @@ AGHIM Web App is an all-in-one online platform that offers a variety of services
     ```sh
    composer install
    ```
-3. Run your database using xampp
-4. Run the project
+3. Create and run your database using xampp
+4. Copy the database name to your env file
+5. Run the database migration
+    ```sh
+   php artisan migrate
+   ```
+6. Seed the database
+    ```sh
+   php artisan db:seed
+   ```
+7. install passport
+    ```sh
+   php artisan passport:install
+   ```
+8. Add the mailing configuration to your env file. (The Mailtrap SMTP server is one of the recommended)
+9. Run the project
     ```sh   
    php artisan serve
    ```

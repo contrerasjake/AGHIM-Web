@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+.serviceInfo-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    padding-top: 10px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    border-style: none;
+    text-align: left;
+}
+
+.servicePhoto img{
+    float: right;
+    max-width: 80%;
+    max-height: auto;
+    
+}
+
+.serviceStatement{
+    font-family: Montserrat;
+    color: #202020;
+    font-size: 40px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.serviceInfo {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 18px;
+    
+    
+}
+
+.serviceInfo-container .order-btn {
+    padding: 20px 0;
+}
+
+.order-btn  a{
+
+    color: #fbfbfb;
+    font-size: 16px;
+    background: #FFC200;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    padding: 10px 20px;
+
+}
+
+.three-steps{
+    font-family: montserrat;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #202020;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-left: 20px;
+    align-items: center;
+    font-family: Montserrat;
+    justify-content: center; 
+
+}
+.img-container{
+    border: none;
+    max-width: auto;
+    max-height: auto;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.chef-container img{
+    max-width: 80%;
+    max-height: 80%;
+    padding: 0px 0;
+    margin: 10px;
+
+}
+.order-container img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 30px 0;
+    margin: 40px;
+    margin-bottom: 0px;
+
+}
+.food-container img{
+    max-width: 80%;
+    max-height: 100%;
+    padding: 55px 0;
+    margin: 50px;
+    margin-bottom: 0px;
+
+}
+.steps-details{
+    font-family: Montserrat;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #202020;
+}
+
+.btn-container{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.divider{
+    width: 95%;
+    margin: auto;
+}
+.testimonial-container .testimonial-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.testimonial-container .testimonials {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    
+}
+.testimonial-container .testimonials .box {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 40px 40px 10px 40px;
+    margin: 0 30px;
+}
+.testimonial-container .testimonials .testimonials-content {
+    letter-spacing: 0.05em;
+    font-size: 20px;
+}
+
+.testimonial-container .testimonials .name {
+    padding: 50px 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+
+
+@media  screen and (max-width: 1366px) {
+    .hero-container .titlePhoto img{
+        max-width: 750px;
+        max-height: 800px;
+        padding: 10px 0;
+    }
+}

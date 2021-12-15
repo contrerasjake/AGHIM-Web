@@ -8,6 +8,8 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\Services\FoodDeliveryController;
+use App\Http\Controllers\Services\BrowseRestaurantController;
+use App\Http\Controllers\Services\RestaurantMenuController;
 use App\Http\Controllers\Services\Package_formReviewController;
 use App\Http\Controllers\Services\Package_formController;
 use App\Http\Controllers\Services\PackageDeliveryController;
@@ -44,12 +46,15 @@ Route::group(['middleware' => ['auth']], function() {
     //only verified account can access with this group
     Route::group(['middleware' => ['verified']], function() {
         Route::get('/food_delivery', [FoodDeliveryController::class, 'index'])->name('food_delivery.index');
+        Route::get('/food_delivery/browse_restaurant', [BrowseRestaurantController::class, 'index'])->name('browse_restaurant');
+        Route::get('/food_delivery/browse_restaurant/restaurant_menu', [RestaurantMenuController::class, 'index'])->name('restaurant_menu');
         //package delivery
         Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery.index');
             Route::get('/package_delivery/form', [Package_formController::class, 'index'])->name('package_form.index');
             Route::get('/package_delivery/form-review', [Package_formReviewController::class, 'index'])->name('package_formReview.index');
     });
 });
+
 
 Route::prefix('profile')->group( function(){
     Route::get('', [ProfileController::class, 'index'])->name('profile');
