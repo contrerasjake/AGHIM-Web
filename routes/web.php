@@ -12,6 +12,7 @@ use App\Http\Controllers\Services\BrowseRestaurantController;
 use App\Http\Controllers\Services\RestaurantMenuController;
 use App\Http\Controllers\Services\OrderCartController;
 use App\Http\Controllers\Services\OrderReviewController;
+use App\Http\Controllers\Services\OrderCheckoutController;
 use App\Http\Controllers\Services\Package_formReviewController;
 use App\Http\Controllers\Services\Package_formController;
 use App\Http\Controllers\Services\PackageDeliveryController;
@@ -52,6 +53,7 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('/food_delivery/browse_restaurant/restaurant_menu', [RestaurantMenuController::class, 'index'])->name('restaurant_menu');
         Route::get('/food_delivery/order_cart', [OrderCartController::class, 'index'])->name('order_cart');
         Route::get('/food_delivery/order_cart/order_review', [OrderReviewController::class, 'index'])->name('order_review');
+        Route::get('/food_delivery/order_cart/order_checkout', [OrderCheckoutController::class, 'index'])->name('order_checkout');
 
 
         //package delivery

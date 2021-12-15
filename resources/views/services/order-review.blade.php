@@ -69,7 +69,7 @@
             </div>
 
             <div class="order-btn">
-                    <a href="{{ route('order_cart') }}"class = "button">Proceed to Payment</a>
+                    <a href="{{ route('order_checkout') }}"class = "button">Proceed to Payment</a>
             </div>
     </div>
 
