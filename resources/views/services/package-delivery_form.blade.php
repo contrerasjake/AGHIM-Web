@@ -12,67 +12,64 @@
             <div class="detail-head">TYPE</div>
 
             <div class="serviceType">
-            <img src="{{ URL ('svg\truck.png') }}" alt="" >
+                <img src="{{ URL ('svg\truck.png') }}" alt="" >
                 <div class="text">Scheduled Pickup</div>
             </div>
         </div>
 
-        <div class="detail-head">ADDRESS</div>
+        <div class="section-title">ADDRESS</div>
 
-        <div  class="address-container" class="flex-column">
-            
-            <div class="flex-column" class="pickup">
-                <div class="bold">
+        <div class="address-container">
+
+            <div class="group">
+                <div class="detail-name">
                     Pickup Location
                 </div>
 
-                <div class="location">
-                <img src="{{ URL ('svg\pickup.png') }}" alt="" >
-                <div class="location-text">Pickup location</div>
-                </div>
-
-            </div>
-
-            <div class="flex-column">
-                <div class="bold">
-                    Drop off Location
-                </div>
-
-                <div class="location">
-                <img src="{{ URL ('svg\dropoff.png') }}" alt="" >
-                <div class="location-text">Drop off Location</div>
+                <div class="input-container">
+                    <input class="textField-location" type="search" name="pickup" id="pickup" placeholder="Pickup Location">
                 </div>
             </div>
 
+            <div class="group">
+                <div class="detail-name">
+                    Drop off
+                </div>
 
-            <div class="flex-row">
-                <div class="flex-column">
-                    <div class="bold">
+                <div class="input-container">
+                    <input class="textField-location" type="search" name="dropoff" id="dropoff" placeholder="Drop off">
+                </div>
+            </div>
+
+            <div class="contact">
+
+                <div class="group">
+                    <div class="detail-name">
                         Contact Person
                     </div>
 
-                    <div class="contact">
-                        Contact Person
+                    <div class="input-container">
+                        <input class="textField" type="text" name="name" id="name" placeholder="Contact Person">
                     </div>
                 </div>
 
-                <div class="flex-column">
-                    <div class="bold">
+                <div class="group">
+                    <div class="detail-name">
                         Contact Number
                     </div>
 
-                    <div class="contact">
-                        Contact Number
+                    <div class="input-container">
+                        <input class="textField" type="text" name="number" id="number" placeholder="Contact Number">
                     </div>
                 </div>
 
-                <div class="flex-column">
-                    <div class="bold">
+                <div class="group">
+                    <div class="detail-name">
                         Email Address
                     </div>
 
-                    <div class="contact">
-                        Email Address
+                    <div class="input-container">
+                        <input class="textField" type="text" name="email" id="email" placeholder="Email Address">
                     </div>
                 </div>
 
@@ -80,66 +77,59 @@
 
         </div>
 
-        <div class="detail-head">TIME</div>
-            <div class="time-details">
-                
-                <div class="flex-column">
-                    <div class="bold">
-                        Pickup Date
+        <div class="section-title">TIME</div>
+
+        <div class="address-container">
+            
+
+            <div class="dateTime-container">
+
+                <div class="time-group">
+                    <div class="group">
+                        <div class="detail-name">
+                            Pickup Date
+                        </div>
+
+                        <div class="input-container">
+                            <input class="textField-time" type="date" name="date" id="date" placeholder="Pick a date">
+                        </div>
                     </div>
 
-                    <div class="time-date">
-                        <div class="time-date_text">
-                            01/01/2021
-                        </div>  
-                        <div class="calendar">
-                            <img src="{{ URL ('svg\calendar.png') }}" alt="" >
-                        </div> 
-                        
+                    <div class="group">
+                        <div class="detail-name">
+                            Pickup Time
+                        </div>
+
+                        <div class="input-container">
+                            <input class="textField-time" type="time" name="time" id="time" placeholder="Pick a time">
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex-column">
-                    <div class="bold">
-                        Pickup Time
-                    </div>
+                <div class="instructions">
+                    <div class="group">
+                        <div class="detail-name">
+                            Instructions to the Driver
+                        </div>
 
-                    <div class="time-date">
-                        <div class="time-date_text">
-                            9:00 AM
+                        <div class="input-container">
+                            <input class="textField-instruction" type="text" name="instruction" id="instruction" placeholder="Optional">
                         </div>
-                        <div class="clock">
-                            <img src="{{ URL ('svg\clock.png') }}" alt="" >
+
+                        <div class="character-number">
+                            0/255 Characters
                         </div>
-                        
+
+                        <div class="payment">
+                            <div class="proceed">
+                                <button><a href="{{ route('package_formReview.index') }}">Continue</a></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="instructions">
-                <div class="flex-column">
-                    <div class="bold">
-                        Instructions to the Driver
-                    </div>
-
-                    <div class="instruction-details">
-                        Optional
-                    </div>
-
-                    <div class="post">
-                        0 / 255 Characters
-                    </div>
-
-                    <div class="payment">
-                        <div class="proceed">
-                            <button><a href="{{ route('package_formReview.index') }}">Continue</a></button>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
         </div>
 
         
@@ -147,3 +137,6 @@
     </div>
 
 @endsection
+
+
+                    

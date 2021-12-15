@@ -41,7 +41,7 @@
         <input class="searchBox" type= "search" name = "search" placeholder="What are you craving?">
     </div>
     <div class= "basket">
-        <a href="{{ route('browse_restaurant') }}" class="fa fa-shopping-basket"></a> 
+        <a href="{{ route('order_cart') }}" class="fa fa-shopping-basket"></a> 
     </div>
     <h2> Good Morning, Juan Dela Cruz!</h2>
     <p>Find the best food for you<p>

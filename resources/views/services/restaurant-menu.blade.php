@@ -27,7 +27,7 @@
 
 <div class = "recommended">
     <div class= "basket">
-    <a href="{{ route('browse_restaurant') }}" class="fa fa-shopping-basket"></a> 
+    <a href="{{ route('order_cart') }}" class="fa fa-shopping-basket"></a> 
     </div>
     <h2> Recommended for you</h2>
 </div>
