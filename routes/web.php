@@ -59,6 +59,7 @@ Route::group(['middleware' => ['auth']], function() {
 Route::prefix('profile')->group( function(){
     Route::get('', [ProfileController::class, 'index'])->name('profile');
     Route::get('edit', [ProfileController::class, 'editProfile'])->name('profile/edit');
+    Route::post('edit', [ProfileController::class, 'saveProfile'])->name('save-profile');
     Route::get('address', [ProfileAddressController::class, 'index'])->name('address');
     Route::get('book', [ProfileBooking::class, 'index'])->name('book');
     Route::get('address/edit', [ProfileAddressController::class, 'editAddress'])->name('address/edit');
