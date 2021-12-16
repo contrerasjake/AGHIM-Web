@@ -15,6 +15,7 @@ use App\Http\Controllers\Services\OrderReviewController;
 use App\Http\Controllers\Services\OrderCheckoutController;
 use App\Http\Controllers\Services\Package_formReviewController;
 use App\Http\Controllers\Services\Package_formController;
+use App\Http\Controllers\Services\Package_TrackingController;
 use App\Http\Controllers\Services\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
@@ -58,14 +59,15 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('/order_checkout', [OrderCheckoutController::class, 'index'])->name('order_checkout');
 
 
+
         //package delivery
         Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery.index');
-            Route::get('/package_delivery/form', [Package_formController::class, 'index'])->name('package_form.index');
-            Route::get('/package_delivery/form-review', [Package_formReviewController::class, 'index'])->name('package_formReview.index');
+        Route::get('/package_delivery/form', [Package_formController::class, 'index'])->name('package_form.index');
+        Route::get('/package_delivery/form-review', [Package_formReviewController::class, 'index'])->name('package_formReview.index');
+        Route::get('/package_delivery/tracking', [Package_TrackingController::class, 'index'])->name('package_tracking.index');
 
         //Car Rental
         Route::get('/car_rental', [CarRentalController::class, 'index'])->name('car_rental.index');
-
     });
 });
 
@@ -73,6 +75,7 @@ Route::group(['middleware' => ['auth']], function() {
 Route::prefix('profile')->group( function(){
     Route::get('', [ProfileController::class, 'index'])->name('profile');
     Route::get('edit', [ProfileController::class, 'editProfile'])->name('profile/edit');
+    Route::post('edit', [ProfileController::class, 'saveProfile'])->name('save-profile');
     Route::get('address', [ProfileAddressController::class, 'index'])->name('address');
     Route::get('book', [ProfileBooking::class, 'index'])->name('book');
     Route::get('address/edit', [ProfileAddressController::class, 'editAddress'])->name('address/edit');

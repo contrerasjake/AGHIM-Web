@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\FoodsController;
 use App\Http\Controllers\RestaurantsController;
+use App\Http\Controllers\CarsController;
+use App\Http\Controllers\CarOwnersController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OrderDetailsController;
 use App\Http\Controllers\PackageDetailsController;
@@ -27,6 +29,8 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
     //food delivery route
     Route::apiResource('/restaurants', RestaurantsController::class);
     Route::apiResource('/foods', FoodsController::class);
+    Route::apiResource('/car_owners', CarOwnersController::class);
+    Route::apiResource('/cars', CarsController::class);
     Route::apiResource('/orders', OrderController::class);
     Route::apiResource('/order-details', OrderDetailsController::class);
 

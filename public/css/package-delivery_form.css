@@ -3,7 +3,7 @@
 
 .container{
     display: flex;
-    padding: 50px 400px 50px 200px;
+    margin: 50px 250px 50px 300px;
 }
 
 /*TYPE*/
@@ -86,10 +86,11 @@
 }
 
 .textField-time{
-    width: 90%;
+    width: 95%;
     min-width: 10px;
-    margin-right: 10px;
-    padding: 10px 10px 10px 10px;
+    max-width: 500px;
+    margin-right: 310px;
+    padding: 10px 0px 10px 10px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
@@ -107,7 +108,7 @@
 .textField-instruction{
     width: 95%;
     min-width: 575px;
-    max-width: 950px;
+    max-width: 940px;
     padding: 10px 0px 100px 10px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -121,6 +122,10 @@
     line-height: 22px;
 
     color: rgba(0, 0, 0, 0.4);
+}
+
+.textField, .textField-Location, .textField-time, .textField-instruction, select, textarea{
+    color: #000000;
 }
 
 
