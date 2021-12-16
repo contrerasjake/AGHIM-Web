@@ -19,6 +19,8 @@ use App\Http\Controllers\Services\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
 use App\Http\Controllers\Profiles\ProfileBooking;
+use App\Http\Controllers\Services\CarRentalController;
+
 
 Route::get('/', function(){
     return view('home');
@@ -53,13 +55,17 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('/food_delivery/browse_restaurant/restaurant_menu', [RestaurantMenuController::class, 'index'])->name('restaurant_menu');
         Route::get('/food_delivery/order_cart', [OrderCartController::class, 'index'])->name('order_cart');
         Route::get('/food_delivery/order_cart/order_review', [OrderReviewController::class, 'index'])->name('order_review');
-        Route::get('/food_delivery/order_cart/order_checkout', [OrderCheckoutController::class, 'index'])->name('order_checkout');
+        Route::get('/order_checkout', [OrderCheckoutController::class, 'index'])->name('order_checkout');
 
 
         //package delivery
         Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery.index');
             Route::get('/package_delivery/form', [Package_formController::class, 'index'])->name('package_form.index');
             Route::get('/package_delivery/form-review', [Package_formReviewController::class, 'index'])->name('package_formReview.index');
+
+        //Car Rental
+        Route::get('/car_rental', [CarRentalController::class, 'index'])->name('car_rental.index');
+
     });
 });
 
