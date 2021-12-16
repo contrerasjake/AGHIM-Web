@@ -29,6 +29,9 @@ class UpdateCarRequest extends FormRequest
             'model_year' => 'required|max:255',
             'brand' => 'required|max:255',
             'color' => 'required|max:255',
+            'speed' => 'required|max:255',
+            'transmission' => 'required|max:255',
+            'engine' => 'required|max:255',
             'capacity' => 'required|max:255',
             'plate_number' => 'required|max:255',
             'rate' => 'required|max:255'
