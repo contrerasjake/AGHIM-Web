@@ -38,7 +38,7 @@
                 <ul class="dropdown">
                     <li><a href="{{ route('food_delivery.index') }}">Food Delivery </a></li>
                     <li><a href="{{ route('package_delivery.index') }}">Package Delivery</a></li>
-                    <li><a href="/">Car Rental</a></li>
+                    <li><a href="{{ route('car_rental.index') }}">Car Rental</a></li>
                 </ul>
             </li>
 
