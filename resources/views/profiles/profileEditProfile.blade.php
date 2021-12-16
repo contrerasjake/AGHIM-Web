@@ -1,5 +1,5 @@
 @extends('layouts.profile')
-@section('header')
+@section('head')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}" >
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 @endsection
@@ -12,29 +12,97 @@
 
             <div class="title-menu-container">
                 <h1>Edit Personal Information</h1>
-                <a href="/profile" class="save-button">SAVE</a>
+                <a class="save-button" onclick="submit()" style="cursor: pointer">SAVE</a>
             </div>
         </div>
-        <div class="content-container">
-            <div class="form-group">
-                <label for="profile_name">Full Name</label>
-                <input type="text" id="profile-name" name="profile_name" class="form-control" placeholder="Enter your full name">
-                <label for="profile_username">Username</label>
-                <input type="text" id="profile-username" name="profile_username" class="form-control" placeholder="Enter your new username">
-                <label for="profile_email">Email</label>
-                <input type="email" id="profile-email" name="profile_email" class="form-control" placeholder="Enter your new email">
-                <label for="profile_contact">Contact Number</label>
-                <input type="tel" id="profile_contact" name="profile_contact" class="form-control" placeholder="Enter your new contact number" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
-                <label for="profile_birthday">Date of Birth</label>
-                <input type="date" id="profile_birthday" name="profile_birthday" class="form-control">
-                <label for="profile_gender">Gender</label>
-                <select id="profile_gender" name="profile_gender" class="form-control">
-                    <option value="N/A">Prefer not to say</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="LGBTQ+">LGBTQ+</option>
-                </input>
+        <form id="profile-form" action="{{ route('save-profile') }}" method="post">
+            @csrf
+            <div class="content-container">
+                <div class="form-group">
+                    <label for="name">Full Name
+                        @error('name')
+                        <div class="error-message">
+                            {{$message}}
+                        </div>
+                        @enderror
+                    </label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" value="{{auth()->user()->name}}" 
+                        @error('name')
+                            style="border-color:red"        
+                        @enderror
+                    >
+                    <label for="username">Username 
+                    @error('username')
+                        <div class="error-message">
+                            {{$message}}
+                        </div>
+                    @enderror
+                    </label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter your new username" value="{{auth()->user()->username}}"
+                        @error('username')
+                            style="border-color:red"        
+                        @enderror
+                    >
+                    <label for="email">Email
+                        @error('email')
+                        <div class="error-message">
+                            {{$message}}
+                        </div>
+                        @enderror
+                    </label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your new email" value="{{auth()->user()->email}}"
+                        @error('email')
+                            style="border-color:red"        
+                        @enderror
+                    >
+                    <label for="contact_number">Contact Number
+                        @error('contact_number')
+                        <div class="error-message">
+                            {{$message}}
+                        </div>
+                        @enderror
+                    </label>
+                    <input type="tel" id="contact_number" name="contact_number" class="form-control" placeholder="Enter your new contact number" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" value="{{auth()->user()->contact_number}}"
+                        @error('contact_number')
+                            style="border-color:red"        
+                        @enderror
+                    >
+                    <label for="date_of_birth">Date of Birth
+                        @error('date_of_birth')
+                        <div class="error-message">
+                            {{$message}}
+                        </div>
+                        @enderror
+                    </label>
+                    <input type="date" id="date_of_birth" name="date_of_birth" class="form-control" value="{{auth()->user()->date_of_birth}}"
+                        @error('date_of_birth')
+                            style="border-color:red"        
+                        @enderror
+                    >                    
+                    <label for="gender">Gender
+                        @error('gender')
+                        <div class="error-message">
+                            {{$message}}
+                        </div>
+                        @enderror
+                    </label>
+                    <select id="gender" name="gender" class="form-control"
+                        @error('gender')
+                            style="border-color:red"        
+                        @enderror
+                    >
+                        <option {{auth()->user()->gender == null ? 'selected' : ''}} value=>Prefer not to say</option>
+                        <option {{auth()->user()->gender == "Male" ? 'selected' : ''}} value="Male">Male</option>
+                        <option {{auth()->user()->gender == "Female" ? 'selected' : ''}} value="Female">Female</option>
+                        <option {{auth()->user()->gender == "LGBTQ+" ? 'selected' : ''}} value="LGBTQ+">LGBTQ+</option>
+                    </select>                    
+                </div>
             </div>
-        </div>
+        </form>
     </div>
+    <script>
+        function submit() {
+            document.getElementById("profile-form").submit();
+        }
+    </script>
 @endsection
