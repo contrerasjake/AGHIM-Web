@@ -1,5 +1,5 @@
 @extends('layouts.profile')
-@section('header')
+@section('head')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profileAddress.css') }}" >
     <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}" >
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>

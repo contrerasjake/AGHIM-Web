@@ -43,10 +43,30 @@ class CarsController extends Controller
             'model_year' => $request->input('model_year'),
             'brand' => $request->input('brand'),
             'color' => $request->input('color'),
+            'speed' => $request->input('speed'),
+            'transmission' => $request->input('transmission'),
+            'engine' => $request->input('engine'),
             'capacity' => $request->input('capacity'),
             'plate_number' => $request->input('plate_number'),
             'rate' => $request->input('rate'),
         ]);
+
+        // For Testing Purposes
+        /*
+        $faker = \Faker\Factory::create(1);
+        $car = Car::create([
+            'name' => $faker->name,
+            'description' => $faker->sentence,
+            'model_year' => $faker->year($max='now'),
+            'brand' => $faker->company,
+            'color' => $faker->colorName,
+            'speed' => (string) $faker->numberBetween($min = 200, $max = 700),
+            'transmission' => $faker->randomElement($array = array ('Automatic','Manual')),
+            'engine' => $faker->randomElement($array = array ('Diesel','Gas')),
+            'capacity' => $faker->randomElement($array = array ('4','6')),
+            'plate_number' => $faker->secondaryAddress,
+            'rate' => (string) $faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 100)
+        ]);*/
 
         return new CarsResource($car);
     }
@@ -88,6 +108,9 @@ class CarsController extends Controller
             'model_year' => $request->input('model_year'),
             'brand' => $request->input('brand'),
             'color' => $request->input('color'),
+            'speed' => $request->input('speed'),
+            'transmission' => $request->input('transmission'),
+            'engine' => $request->input('engine'),
             'capacity' => $request->input('capacity'),
             'plate_number' => $request->input('plate_number'),
             'rate' => $request->input('rate'),

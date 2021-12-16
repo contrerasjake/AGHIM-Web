@@ -21,6 +21,7 @@ class CarOwnersResource extends JsonResource
                 'name' => $this->name,
                 'address' => $this->address,
                 'contact' => $this->contact,
+                'cars' => $this->car,
                 'created_at' => $this->created_at,
                 'updated_at' => $this->updated_at
             ]

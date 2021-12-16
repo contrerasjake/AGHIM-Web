@@ -17,12 +17,15 @@ class CreateCarsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->unsignedInteger('model_year');
+            $table->string('model_year');
             $table->string('brand');
             $table->string('color');
-            $table->unsignedInteger('capacity');
+            $table->string('speed');
+            $table->string('transmission');
+            $table->string('engine');
+            $table->integer('capacity');
             $table->string('plate_number');
-            $table->float('rate');
+            $table->string('rate');
             $table->timestamps();
         });
     }

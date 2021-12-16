@@ -19,9 +19,12 @@ class CarFactory extends Factory
             'model_year' => $this->faker->year($max='now'),
             'brand' => $this->faker->company,
             'color' => $this->faker->colorName,
-            'capacity' => $this->faker->numberBetween($min = 4, $max = 20),
+            'speed' => (string) $this->faker->numberBetween($min = 200, $max = 700),
+            'transmission' => $this->faker->randomElement($array = array ('Automatic','Manual')),
+            'engine' => $this->faker->randomElement($array = array ('Diesel','Gas')),
+            'capacity' => $this->faker->randomElement($array = array ('4','6')),
             'plate_number' => $this->faker->secondaryAddress,
-            'rate' => $this->faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 100),
+            'rate' => (string) $this->faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 100),
         ];
     }
 }

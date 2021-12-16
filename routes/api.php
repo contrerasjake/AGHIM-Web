@@ -29,8 +29,6 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
     //food delivery route
     Route::apiResource('/restaurants', RestaurantsController::class);
     Route::apiResource('/foods', FoodsController::class);
-    Route::apiResource('/car_owners', CarOwnersController::class);
-    Route::apiResource('/cars', CarsController::class);
     Route::apiResource('/orders', OrderController::class);
     Route::apiResource('/order-details', OrderDetailsController::class);
 
@@ -41,4 +39,7 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
     //payment route
     Route::apiResource('/payment-details', PaymentDetailsController::class);
     
+    //car rental route
+    Route::apiResource('/car_owners', CarOwnersController::class);
+    Route::apiResource('/cars', CarsController::class);
 });
