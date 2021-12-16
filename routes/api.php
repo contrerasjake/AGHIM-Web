@@ -4,6 +4,7 @@ use App\Http\Controllers\FoodsController;
 use App\Http\Controllers\RestaurantsController;
 use App\Http\Controllers\CarsController;
 use App\Http\Controllers\CarOwnersController;
+use App\Http\Controllers\RentalsController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\OrderDetailsController;
 use App\Http\Controllers\PackageDetailsController;
@@ -42,4 +43,5 @@ Route::middleware('auth:api')->prefix('v1')->group(function(){
     //car rental route
     Route::apiResource('/car_owners', CarOwnersController::class);
     Route::apiResource('/cars', CarsController::class);
+    Route::apiResource('/rentals', RentalsController::class);
 });
