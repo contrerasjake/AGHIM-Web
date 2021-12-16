@@ -197,3 +197,9 @@
         display: none;
     }
 }
+
+.error-message {
+    font-size: .75rem;
+    color: red;
+    margin-right: 15%;
+}
