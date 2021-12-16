@@ -15,6 +15,7 @@ use App\Http\Controllers\Services\OrderReviewController;
 use App\Http\Controllers\Services\OrderCheckoutController;
 use App\Http\Controllers\Services\Package_formReviewController;
 use App\Http\Controllers\Services\Package_formController;
+use App\Http\Controllers\Services\Package_TrackingController;
 use App\Http\Controllers\Services\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
@@ -60,6 +61,7 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('/package_delivery', [PackageDeliveryController::class, 'index'])->name('package_delivery.index');
             Route::get('/package_delivery/form', [Package_formController::class, 'index'])->name('package_form.index');
             Route::get('/package_delivery/form-review', [Package_formReviewController::class, 'index'])->name('package_formReview.index');
+            Route::get('/package_delivery/tracking', [Package_TrackingController::class, 'index'])->name('package_tracking.index');
     });
 });
 
