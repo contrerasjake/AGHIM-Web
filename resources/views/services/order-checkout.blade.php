@@ -9,9 +9,8 @@
 
 
 @section('content')
-
-<div class = "body">
     <div class="container">
+        <div class="cart-container">
             <div class = logo-cart>
                 LOGO | CART
             </div>
@@ -61,9 +60,9 @@
                     <img src="{{ URL ('img/paypal.png') }}" alt="" > 
                     </div>
                     PayPal
-
+    
                 </div>
             </div>
+        </div>
     </div>
-
-</div>
+@endsection

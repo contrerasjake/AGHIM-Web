@@ -12,6 +12,7 @@
 
 
 <div class="container">
+    <div class="cart-container">
         <div class = "manage">
             <p>Manage<p>
         </div>
@@ -39,6 +40,7 @@
             
         </div>
         </a>
+    </div>
         
 </div>
 
