@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Services;
+namespace App\Http\Controllers\Services\package_delivery;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -8,6 +8,6 @@ use App\Http\Controllers\Controller;
 class Package_formReviewController extends Controller
 {
     public function index(){
-        return view('services.package-delivery_form-review');
+        return view('services.package delivery.package-delivery_form-review');
     }
 }

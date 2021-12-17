@@ -7,20 +7,20 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\VerificationController;
-use App\Http\Controllers\Services\FoodDeliveryController;
-use App\Http\Controllers\Services\BrowseRestaurantController;
-use App\Http\Controllers\Services\RestaurantMenuController;
-use App\Http\Controllers\Services\OrderCartController;
-use App\Http\Controllers\Services\OrderReviewController;
+use App\Http\Controllers\Services\food_delivery\FoodDeliveryController;
+use App\Http\Controllers\Services\food_delivery\BrowseRestaurantController;
+use App\Http\Controllers\Services\food_delivery\RestaurantMenuController;
+use App\Http\Controllers\Services\food_delivery\OrderCartController;
+use App\Http\Controllers\Services\food_delivery\OrderReviewController;
 use App\Http\Controllers\Services\OrderCheckoutController;
-use App\Http\Controllers\Services\Package_formReviewController;
-use App\Http\Controllers\Services\Package_formController;
-use App\Http\Controllers\Services\Package_TrackingController;
-use App\Http\Controllers\Services\PackageDeliveryController;
+use App\Http\Controllers\Services\package_delivery\Package_formReviewController;
+use App\Http\Controllers\Services\package_delivery\Package_formController;
+use App\Http\Controllers\Services\package_delivery\Package_TrackingController;
+use App\Http\Controllers\Services\package_delivery\PackageDeliveryController;
 use App\Http\Controllers\Profiles\ProfileController;
 use App\Http\Controllers\Profiles\ProfileAddressController;
 use App\Http\Controllers\Profiles\ProfileBooking;
-use App\Http\Controllers\Services\CarRentalController;
+use App\Http\Controllers\Services\car_rental\CarRentalController;
 
 
 Route::get('/', function(){
