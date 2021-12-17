@@ -115,7 +115,7 @@
 
                     <div class="payment">
                         <div class="proceed">
-                            <button>Proceed to payment</button>
+                            <button><a href="{{ route('order_checkout') }}">Proceed to payment</a></button>
                         </div>
                     </div>
                 </div>

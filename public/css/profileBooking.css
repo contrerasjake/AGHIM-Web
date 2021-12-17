@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-
-
-
-
 .profile-container{
     display: flex;
     
@@ -208,9 +204,12 @@
 .details{
     text-align: right;
     height: auto;
+    color: #111111;
 }
 
 .details button {
+    color: #111111;
+
     background: none;
     text-decoration: underline;
     cursor: pointer;
@@ -220,6 +219,10 @@
     border: 0;
     text-align: center;
     font-family: Montserrat;
+}
+
+a {
+    color: #111111;
 }
 
 @media only screen and (max-width: 768px) {
