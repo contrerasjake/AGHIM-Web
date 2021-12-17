@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Services;
+namespace App\Http\Controllers\Services\food_delivery;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -8,6 +8,6 @@ use App\Http\Controllers\Controller;
 class FoodDeliveryController extends Controller
 {
     public function index(){
-        return view('services.food-delivery');
+        return view('services.food delivery.food-delivery');
     }
 }
