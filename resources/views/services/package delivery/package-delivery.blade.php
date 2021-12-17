@@ -63,7 +63,7 @@
                 <input class="searchBox" type= "search" name = "search" placeholder="Tracking Number">
                 <div class="tracking">
                     <div class="search">
-                        <button><img src="{{ URL ('svg\search.png') }}" alt="" > </button>
+                        <button><a href="{{ route('package_tracking.index') }}"><img src="{{ URL ('svg\search.png') }}" alt="" ></button>
                     </div>
                 </div>
             </div>

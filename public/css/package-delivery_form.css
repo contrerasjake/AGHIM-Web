@@ -87,10 +87,10 @@
 
 .textField-time{
     width: 95%;
-    min-width: 10px;
-    max-width: 500px;
-    margin-right: 310px;
-    padding: 10px 0px 10px 10px;
+    width: 275px;
+    margin: 0px 20px 0px 0px;
+
+    padding: 10px 40px 10px 40px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
@@ -174,15 +174,9 @@
 
 /*TIME*/
 
-.date-container{
-    display: flex;
-    flex-direction: column;
-}
-
 .time-group{
     display: flex;
     flex-direction: row;
-
 }
 
 
@@ -199,7 +193,16 @@
     margin: 10px 200px 0px 0px;
 }
 
+.instruction-title {
+    margin: 20px 0px 0px 10px;
 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 17px;
+    min-width: 300px;
+}
 
 
 .payment{

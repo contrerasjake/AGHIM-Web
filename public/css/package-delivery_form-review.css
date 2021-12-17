@@ -88,10 +88,9 @@
 }
 
 .payment{
-    margin: 40px 0px 0px 800px;
     display: flex;
-    align-content: right;
-    text-align: right;
+    justify-content: right;
+    margin: 20px 0px 0px 0px;
 }
 
 .proceed {

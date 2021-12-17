@@ -32,7 +32,7 @@
                 
                 <div class="details">
                     <div class="details-button">
-                        <button>View Details</button>
+                        <button><a href="{{ route('package_tracking.index') }}">View Details</button>
                     </div>
                 </div>   
             </div>

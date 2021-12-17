@@ -80,9 +80,6 @@
         <div class="section-title">TIME</div>
 
         <div class="address-container">
-            
-
-            <div class="dateTime-container">
 
                 <div class="time-group">
                     <div class="group">
@@ -91,7 +88,7 @@
                         </div>
 
                         <div class="input-container">
-                            <input class="textField-time" type="date" name="date" id="date" placeholder="Pick a date">
+                            <input class="textField-time" type="date" name="date" id="date">
                         </div>
                     </div>
 
@@ -101,14 +98,14 @@
                         </div>
 
                         <div class="input-container">
-                            <input class="textField-time" type="time" name="time" id="time" placeholder="Pick a time">
+                            <input class="textField-time" type="time" name="time" id="time">
                         </div>
                     </div>
                 </div>
 
                 <div class="instructions">
                     <div class="group">
-                        <div class="detail-name">
+                        <div class="instruction-title">
                             Instructions to the Driver
                         </div>
 
@@ -126,9 +123,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
+                </div>    
 
         </div>
 
